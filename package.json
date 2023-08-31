@@ -18,5 +18,8 @@
     "js"
   ],
   "author": "Max Martinsen <MaxMar68543@stud.noroff.no>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
 }

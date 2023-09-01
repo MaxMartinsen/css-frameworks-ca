@@ -1,8 +1,4 @@
 @charset "UTF-8";
-:root {
-  --border: rgba(255, 255, 255, 0.137);
-}
-
 /*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -132,18 +128,18 @@
   color-scheme: dark;
   --bs-body-color: #dee2e6;
   --bs-body-color-rgb: 222, 226, 230;
-  --bs-body-bg: #212529;
-  --bs-body-bg-rgb: 33, 37, 41;
+  --bs-body-bg: rgba(0, 0, 0, 0.3764705882);
+  --bs-body-bg-rgb: 0, 0, 0;
   --bs-emphasis-color: #fff;
   --bs-emphasis-color-rgb: 255, 255, 255;
   --bs-secondary-color: rgba(222, 226, 230, 0.75);
   --bs-secondary-color-rgb: 222, 226, 230;
-  --bs-secondary-bg: #343a40;
-  --bs-secondary-bg-rgb: 52, 58, 64;
+  --bs-secondary-bg: rgba(255, 255, 255, 0.0901960784);
+  --bs-secondary-bg-rgb: 255, 255, 255;
   --bs-tertiary-color: rgba(222, 226, 230, 0.5);
   --bs-tertiary-color-rgb: 222, 226, 230;
-  --bs-tertiary-bg: #2b3035;
-  --bs-tertiary-bg-rgb: 43, 48, 53;
+  --bs-tertiary-bg: rgba(91, 91, 91, 0.2333333333);
+  --bs-tertiary-bg-rgb: 91, 91, 91;
   --bs-primary-text-emphasis: #6ea8fe;
   --bs-secondary-text-emphasis: #a7acb1;
   --bs-success-text-emphasis: #75b798;
@@ -158,23 +154,23 @@
   --bs-info-bg-subtle: #032830;
   --bs-warning-bg-subtle: #332701;
   --bs-danger-bg-subtle: #2c0b0e;
-  --bs-light-bg-subtle: #343a40;
-  --bs-dark-bg-subtle: #1a1d20;
+  --bs-light-bg-subtle: rgba(255, 255, 255, 0.0901960784);
+  --bs-dark-bg-subtle: rgba(12, 12, 12, 0.5450980392);
   --bs-primary-border-subtle: #084298;
   --bs-secondary-border-subtle: #41464b;
   --bs-success-border-subtle: #0f5132;
   --bs-info-border-subtle: #087990;
   --bs-warning-border-subtle: #997404;
   --bs-danger-border-subtle: #842029;
-  --bs-light-border-subtle: #495057;
-  --bs-dark-border-subtle: #343a40;
+  --bs-light-border-subtle: rgba(255, 255, 255, 0.137254902);
+  --bs-dark-border-subtle: rgba(255, 255, 255, 0.0901960784);
   --bs-heading-color: inherit;
   --bs-link-color: #6ea8fe;
   --bs-link-hover-color: #8bb9fe;
   --bs-link-color-rgb: 110, 168, 254;
   --bs-link-hover-color-rgb: 139, 185, 254;
   --bs-code-color: #e685b5;
-  --bs-border-color: #495057;
+  --bs-border-color: rgba(255, 255, 255, 0.137254902);
   --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
   --bs-form-valid-color: #75b798;
   --bs-form-valid-border-color: #75b798;
@@ -11855,16 +11851,6 @@ textarea.form-control-lg {
   }
 }
 /* Global */
-body {
-  background-color: #14063d;
-}
-
-html,
-body {
-  height: 100%;
-  line-height: 1;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -11890,7 +11876,24 @@ html {
 
 .main,
 .footer {
-  color: white;
+  color: #fff !important;
+}
+
+/* Color */
+.bg-primary-subtle {
+  background-color: #14063d !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-light {
+  color: #efefef !important;
+}
+
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.3764705882);
 }
 
 /* Dekor */
@@ -11910,7 +11913,7 @@ html {
   width: 600px;
   height: 600px;
   border-radius: 600px;
-  background: #800bf5;
+  background: #800bf5 !important;
   filter: blur(200px);
   z-index: -1;
 }
@@ -11921,7 +11924,7 @@ html {
   width: 610px;
   height: 610px;
   border-radius: 610px;
-  background: #04c3ff;
+  background: #04c3ff !important;
   filter: blur(300px);
   z-index: -2;
 }
@@ -11958,24 +11961,25 @@ html {
 
 .form-control,
 .form-control::placeholder {
-  background-color: rgba(255, 255, 255, 0.089);
-  color: #a4a4a4;
-  border-color: var(--border);
+  color: #a4a4a4 !important;
+  border-color: rgba(255, 255, 255, 0.137254902) !important;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.0901960784) !important;
 }
 
 /* Font */
 h1, .h1 {
-  color: #efefef;
   font-family: "Poppins", sans-serif;
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 .list-item,
 .side-nav {
-  color: #a4a4a4;
+  color: #a4a4a4 !important;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -11986,11 +11990,11 @@ h1, .h1 {
 }
 .list-item:hover,
 .side-nav:hover {
-  color: #efefef;
+  color: #efefef !important;
 }
 
 h3, .h3 {
-  color: #efefef;
+  color: #efefef !important;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -12001,7 +12005,7 @@ h3, .h3 {
 label,
 h4,
 .h4 {
-  color: #a4a4a4;
+  color: #a4a4a4 !important;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -12016,7 +12020,7 @@ nav {
 /* Button */
 .btn-primary {
   border-radius: 56px;
-  background: var(--gradient, linear-gradient(90deg, #800bf5 0%, #25c6f9 100%));
+  background: var(--gradient, linear-gradient(90deg, #800bf5 0%, #25c6f9 100%)) !important;
   display: inline-flex;
   padding: 10px 40px 11px 40px;
   flex-direction: column;
@@ -12024,29 +12028,28 @@ nav {
   align-items: center;
   gap: 10px;
   border: none;
-  color: white;
 }
 .btn-primary:hover {
-  background: none;
+  background: none !important;
 }
 
 .btn-light {
-  background: rgba(255, 255, 255, 0.089);
-  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.0901960784) !important;
+  border-color: rgba(255, 255, 255, 0.137254902) !important;
 }
 .btn-light:hover {
-  background: #800bf5;
+  background: #800bf5 !important;
 }
 
 .btn-secondary {
-  background: linear-gradient(99deg, #9C3FE4 0%, #C65647 100%);
+  background: linear-gradient(99deg, #9C3FE4 0%, #C65647 100%) !important;
 }
 .btn-secondary:hover {
-  background: #C65647;
+  background: #C65647 !important;
 }
 
 .active {
-  color: white;
+  color: #fff !important;
 }
 
 /* Side Bar */
@@ -12080,7 +12083,7 @@ nav {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-image: none;
-  border: solid 1px white;
+  border: solid 1px #fff;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
@@ -12099,7 +12102,7 @@ nav {
 /* Footer */
 .footer {
   position: relative;
-  background-color: #14063d;
+  background-color: #14063d !important;
 }
 
 .scrollable-content {
@@ -12112,7 +12115,7 @@ nav {
 }
 .scrollable-content::-webkit-scrollbar-track {
   -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-  background-color: rgba(249, 249, 253, 0.2823529412);
+  background-color: rgba(255, 255, 255, 0.0901960784) !important;
   border-radius: 10px;
 }
 .scrollable-content::-webkit-scrollbar-thumb {

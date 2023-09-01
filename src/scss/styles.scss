@@ -1,18 +1,7 @@
-@import "./variables/variables";
+@import "../scss/variables/variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./components/buttons";
 
 /* Global */
-body {
-  background-color: #14063d;
-}
-
-html,
-body {
-  height: 100%;
-  line-height: 1;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -25,6 +14,7 @@ html {
   position: relative;
   z-index: 2000;
 }
+
 .navbar {
   position: relative;
   z-index: 1051;
@@ -37,8 +27,23 @@ html {
 
 .main,
 .footer {
-  color: white;
+  color: $white !important;
 }
+/* Color */
+
+.bg-primary-subtle {
+    background-color: $indigo !important;
+}
+.text-white {
+    color: $white !important;
+}
+.text-light {
+    color: $grey-200 !important;;
+}
+.bg-modal {
+    background-color: $gray-900;
+}
+
 
 /* Dekor */
 
@@ -58,7 +63,7 @@ html {
   width: 600px;
   height: 600px;
   border-radius: 600px;
-  background: #800bf5;
+  background: $indigo-300 !important;
   filter: blur(200px);
   z-index: -1;
 }
@@ -69,12 +74,12 @@ html {
   width: 610px;
   height: 610px;
   border-radius: 610px;
-  background: #04c3ff;
+  background: $blue-300 !important;
   filter: blur(300px);
   z-index: -2;
 }
 /* Background Hero */
-.background-hero{
+.background-hero {
   position: absolute;
   top: 50px;
   right: -50px;
@@ -107,22 +112,22 @@ html {
 }
 .form-control,
 .form-control::placeholder {
-  background-color: rgba(255, 255, 255, 0.089);
-  color: #a4a4a4;
-  border-color: var(--border);
+  color: $grey-100 !important;
+  border-color: $gray-700 !important;
+}
+.form-control{
+    background-color: $gray-800 !important;
 }
 /* Font */
 h1 {
-  color: #efefef;
   font-family: "Poppins", sans-serif;
   font-size: 35px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 .list-item,
 .side-nav {
-  color: #a4a4a4;
+  color: $grey-100 !important;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -131,11 +136,11 @@ h1 {
   text-decoration: none;
   transition: color 0.5s ease-in-out;
   &:hover {
-    color: #efefef;
+    color: $grey-200 !important;
   }
 }
 h3 {
-  color: #efefef;
+  color: $grey-200 !important;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -144,7 +149,7 @@ h3 {
 }
 label,
 h4 {
-  color: #a4a4a4;
+  color: $grey-100 !important;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -157,7 +162,7 @@ nav {
 /* Button */
 .btn-primary {
   border-radius: 56px;
-  background: var(--gradient, linear-gradient(90deg, #800bf5 0%, #25c6f9 100%));
+  background: $gradient-primary !important;
   display: inline-flex;
   padding: 10px 40px 11px 40px;
   flex-direction: column;
@@ -165,27 +170,26 @@ nav {
   align-items: center;
   gap: 10px;
   border: none;
-  color: white;
   &:hover {
-    background: none;
+    background: none !important;
   }
 }
 .btn-light {
-  background: rgba(255, 255, 255, 0.089);
-  border-color: var(--border);
+  background: $gray-800 !important;
+  border-color: $gray-700 !important;
   &:hover {
-    background: #800bf5;
+    background: $indigo-300 !important;
   }
 }
 
 .btn-secondary {
-  background: linear-gradient(99deg, #9C3FE4 0%, #C65647 100%);
+  background: $gradient-secondary !important;
   &:hover {
-    background: #C65647;
+    background: $red-600 !important;
   }
 }
 .active {
-  color: white;
+  color: $white !important;
 }
 /* Side Bar */
 .list-group-item {
@@ -218,7 +222,7 @@ nav {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-image: none;
-  border: solid 1px white;
+  border: solid 1px $white;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
@@ -238,7 +242,7 @@ nav {
 /* Footer */
 .footer {
   position: relative;
-  background-color: #14063d;
+  background-color: $indigo-900 !important;
 }
 
 .scrollable-content {
@@ -252,12 +256,12 @@ nav {
   
   &::-webkit-scrollbar-track {
     -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-    background-color: #f9f9fd48;
+    background-color: $gray-800 !important;
     border-radius: 10px;
   }
   
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background: linear-gradient(180deg, #00c6fb, #005bea);
+    background: $gradient-blue;
   }
 }

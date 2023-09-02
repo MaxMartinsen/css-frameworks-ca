@@ -222,7 +222,6 @@ nav {
   border: solid 1px $white;
   border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 3px;
 }
 
 .carousel-control-prev-icon {
@@ -244,7 +243,7 @@ nav {
 
 .scrollable-content {
   
-  height: calc(88.7vh);
+  height: calc(89.4vh);
   overflow-y: auto;
   overflow-x: hidden;
   &::-webkit-scrollbar {

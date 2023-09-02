@@ -12082,7 +12082,6 @@ nav {
   border: solid 1px #fff;
   border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 3px;
 }
 
 .carousel-control-prev-icon {
@@ -12102,7 +12101,7 @@ nav {
 }
 
 .scrollable-content {
-  height: 88.7vh;
+  height: 89.4vh;
   overflow-y: auto;
   overflow-x: hidden;
 }

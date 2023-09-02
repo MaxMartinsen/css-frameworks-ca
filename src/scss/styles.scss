@@ -31,6 +31,12 @@
 .bg-primary-subtle {
     background-color: $indigo !important;
 }
+.bg-primary {
+    background-color: $indigo-400 !important;
+}
+.bg-info {
+    background-color: $blue-100 !important;
+  }
 .text-white {
     color: $white !important;
 }
@@ -40,7 +46,9 @@
 .bg-modal {
     background-color: $gray-900;
 }
-
+.fa-xmark {
+    font-size: 30px;
+}
 
 /* Dekor */
 

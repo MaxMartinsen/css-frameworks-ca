@@ -11851,10 +11851,6 @@ textarea.form-control-lg {
   }
 }
 /* Global */
-html {
-  box-sizing: border-box;
-}
-
 .wrapper {
   overflow: hidden;
   display: flex;

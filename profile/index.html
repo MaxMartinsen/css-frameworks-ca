@@ -33,14 +33,14 @@
               />
             </a>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler border-0 "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown"
               aria-expanded="false"
               aria-label="Toggle navigation"
-            ><span class="navbar-toggler-icon"></span>
+            ><span class=""><i class="fa-solid fa-bars-staggered"></i></span>
             </button>
   
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -53,7 +53,7 @@
                     />
                   </a>
                 </li>
-                <div class="d-md-flex justify-content-around  align-items-center w-100 ">
+                <div class="d-md-flex justify-content-around  align-items-center w-100  ">
                   <li class="nav-item list-item text-center ">
                     <a
                       class="nav-link mx-2 active"
@@ -90,7 +90,8 @@
                     class="form-control"
                     placeholder="Search"
                   />
-                  <button class="btn list-item ms-2" id="searchButton">
+                  <button class="btn list-item ms-2 border-0 " data-bs-toggle="modal"
+                  data-bs-target="#exampleModal" id="searchButton">
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </div>
@@ -98,8 +99,8 @@
             </div>
           </div>
         </nav>
-                      <!-- Modal -->
-              <div
+            <!-- Modal -->
+            <div
               class="modal fade bg-modal"
               id="exampleModal"
               tabindex="-1"
@@ -126,8 +127,7 @@
                 </div>
               </div>
             </div>
-            
-    <!-- Modal -->
+            <!-- Modal -->
       </div>
       <div class="container-md ">
       <div class="row">
@@ -141,32 +141,38 @@
                 >
               </li>
               <li class="list-group-item px-0 px-md-3 ">
-                <a class="side-nav d-flex align-items-center " href="#"
+                <a class="side-nav d-flex align-items-center " href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                   ><i class="fa-solid fa-gamepad me-2"></i><span class="d-none d-lg-block">Games</span></a
                 >
               </li>
               <li class="list-group-item px-0 px-md-3 ">
-                <a class="side-nav d-flex align-items-center " href="#"
+                <a class="side-nav d-flex align-items-center " href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                   ><i class="fa-solid fa-message me-2"></i><span class="d-none d-lg-block">Message</span></a
                 >
               </li>
               <li class="list-group-item px-0 px-md-3 ">
-                <a class="side-nav d-flex align-items-center " href="#"
+                <a class="side-nav d-flex align-items-center " href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                   ><i class="fa-solid fa-eye me-2"></i><span class="d-none d-lg-block">Visit</span></a
                 >
               </li>
               <li class="list-group-item px-0 px-md-3 ">
-                <a class="side-nav d-flex align-items-center " href="#"
+                <a class="side-nav d-flex align-items-center " href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                   ><i class="fa-solid fa-thumbs-up me-2"></i><span class="d-none d-lg-block">Likes</span></a
                 >
               </li>
               <li class="list-group-item px-0 px-md-3 ">
-                <a class="side-nav d-flex align-items-center " href="#"
+                <a class="side-nav d-flex align-items-center " href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                   ><i class="fa-solid fa-heart me-2"></i><span class="d-none d-lg-block">Favorites</span></a
                 >
               </li>
               <li class="list-group-item px-0 px-md-3 ">
-                <a class="side-nav d-flex align-items-center " href="#"
+                <a class="side-nav d-flex align-items-center " href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                   ><i class="fa-solid fa-gift me-2"></i><span class="d-none d-lg-block">Gifts</span></a
                 >
               </li>
@@ -176,12 +182,13 @@
           <div class="d-block mt-auto mb-4">
             <ul class="list-group">
               <li class="list-group-item px-0 px-md-3 ">
-                <a class="side-nav d-flex align-items-center " href="#"
+                <a class="side-nav d-flex align-items-center " href="#" data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
                   ><i class="fa-solid fa-gear me-2"></i><span class="d-none d-lg-block">Settings</span></a
                 >
               </li>
               <li class="list-group-item px-0 px-md-3 ">
-                <a class="side-nav d-flex align-items-center " href="#"
+                <a class="side-nav d-flex align-items-center " href="../index.html"
                   ><i class="fa-solid fa-arrow-right-from-bracket me-2"></i
                   ><span class="d-none d-lg-block">Log out</span></a
                 >

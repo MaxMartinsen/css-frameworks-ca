@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" class="lh-1 h-100">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../dist/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
       rel="stylesheet"
-    />
+    >
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../dist/css/iconsfont.css" />
+    >
+    <link rel="stylesheet" href="../dist/css/iconsfont.css">
     <title>DizMiss | Profile</title>
   </head>
   <body class="lh-1 h-100">
@@ -29,8 +29,8 @@
             <a class="navbar-brand d-block d-md-none" href="#">
               <img
                 src="../src/images/Logo.svg"
-                height="40"
-              />
+                height="40" alt="DizMiss kids logo"
+              >
             </a>
             <button
               class="navbar-toggler border-0 "
@@ -45,58 +45,32 @@
   
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav d-flex justify-content-between align-items-center w-100">
-                <li class="nav-item d-none d-md-block">
-                  <a class="nav-link mx-2" href="#">
-                    <img
-                      src="../src/images/Logo.svg"
-                      height="50"
-                    />
-                  </a>
-                </li>
-                <div class="d-md-flex justify-content-around  align-items-center w-100  ">
-                  <li class="nav-item list-item text-center ">
-                    <a
-                      class="nav-link mx-2 active"
-                      aria-current="page"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      >My profile</a
-                    >
+                  <li class="nav-item d-none d-md-block">
+                      <a class="nav-link mx-2" href="#">
+                          <img src="../src/images/Logo.svg" height="50" alt="DizMiss kids logo">
+                      </a>
                   </li>
-                  <li class="nav-item list-item text-center">
-                    <a
-                      class="nav-link mx-2"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      >Message</a
-                    >
+                  <li class="nav-item d-md-flex justify-content-around align-items-center w-100 text-center ">
+                      <div>
+                          <a class="nav-link mx-2 list-item active" aria-current="page" href="#">My profile</a>
+                      </div>
+                      <div>
+                          <a class="nav-link mx-2 list-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Message</a>
+                      </div>
+                      <div>
+                          <a class="nav-link mx-2 list-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Favorites</a>
+                      </div>
                   </li>
-                  <li class="nav-item list-item text-center">
-                    <a
-                      class="nav-link mx-2"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      >Favorites</a
-                    >
+                  <li class="nav-item">
+                      <div class="search d-flex">
+                          <input type="text" id="searchInput" class="form-control" placeholder="Search">
+                          <button class="btn list-item ms-2 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal" id="searchButton">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                          </button>
+                      </div>
                   </li>
-                </div>
-                <div class="search d-flex">
-                  <input
-                    type="text"
-                    id="searchInput"
-                    class="form-control"
-                    placeholder="Search"
-                  />
-                  <button class="btn list-item ms-2 border-0 " data-bs-toggle="modal"
-                  data-bs-target="#exampleModal" id="searchButton">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
               </ul>
-            </div>
+          </div>
           </div>
         </nav>
             <!-- Modal -->
@@ -317,7 +291,6 @@
       </div>
       </div>
       </div>
-    </div>
     <script
       src="https://kit.fontawesome.com/8ba4dac050.js"
       crossorigin="anonymous"

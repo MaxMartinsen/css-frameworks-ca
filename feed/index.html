@@ -45,56 +45,33 @@
   
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav d-flex justify-content-between align-items-center w-100">
-                <li class="nav-item d-none d-md-block">
-                  <a class="nav-link mx-2" href="#">
-                    <img
-                      src="../src/images/Logo.svg"
-                      height="50" alt="DizMiss kids logo"
-                    >
-                  </a>
-                </li>
-                <div class="d-md-flex justify-content-around  align-items-center w-100 ">
-                  <li class="nav-item list-item text-center ">
-                    <a
-                      class="nav-link mx-2"
-                      aria-current="page"
-                      href="../profile/index.html"
-                      >My profile</a
-                    >
+                  <li class="nav-item d-none d-md-block">
+                      <a class="nav-link mx-2" href="#">
+                          <img src="../src/images/Logo.svg" height="50" alt="DizMiss kids logo">
+                      </a>
                   </li>
-                  <li class="nav-item list-item text-center">
-                    <a
-                      class="nav-link mx-2"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      >Message</a
-                    >
+                  <li class="nav-item d-md-flex justify-content-around align-items-center w-100 text-center ">
+                      <div>
+                          <a class="nav-link mx-2 list-item" aria-current="page" href="../profile/index.html">My profile</a>
+                      </div>
+                      <div>
+                          <a class="nav-link mx-2 list-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Message</a>
+                      </div>
+                      <div>
+                          <a class="nav-link mx-2 list-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Favorites</a>
+                      </div>
                   </li>
-                  <li class="nav-item list-item text-center">
-                    <a
-                      class="nav-link mx-2"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      >Favorites</a
-                    >
+                  <li class="nav-item">
+                      <div class="search d-flex">
+                          <input type="text" id="searchInput" class="form-control" placeholder="Search">
+                          <button class="btn list-item ms-2 border-0" data-bs-toggle="modal" data-bs-target="#exampleModal" id="searchButton">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                          </button>
+                      </div>
                   </li>
-                </div>
-                <div class="search d-flex">
-                  <input
-                    type="text"
-                    id="searchInput"
-                    class="form-control"
-                    placeholder="Search"
-                  />
-                  <button class="btn list-item ms-2 border-0"  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal" id="searchButton">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
               </ul>
-            </div>
+          </div>
+          
           </div>
         </nav>
 

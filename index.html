@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="lh-1 h-100">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
@@ -22,61 +22,36 @@
             <a class="navbar-brand d-block d-md-none" href="#">
               <img
                 src="./src/images/Logo.svg"
-                height="40"
-              />
+                height="40" alt="DizMiss kids logo">
             </a>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler border-0"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown"
               aria-controls="navbarNavDropdown"
               aria-expanded="false"
               aria-label="Toggle navigation"
-            ><span class="navbar-toggler-icon"></span>
+            ><span class=""><i class="fa-solid fa-bars-staggered"></i></span>
             </button>
   
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul
-                class="navbar-nav d-flex justify-content-between align-items-center w-100"
-              >
-                <div class="d-md-flex">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link mx-2"
-                      aria-current="page"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      >About Us</a
-                    >
+              <ul class="navbar-nav d-flex justify-content-between align-items-center w-100">
+                  <li class="nav-item d-md-flex  ">
+                    <a class="nav-link mx-2" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">About Us</a>
+                    <a class="nav-link mx-2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+                  </li>
+                  <li class="nav-item d-none d-md-block">
+                    <a class="nav-link mx-2" href="#">
+                    <img src="./src/images/Logo.svg" height="50" alt="DizMiss kids logo">
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link mx-2"
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
-                      >Contact</a
-                    >
-                  </li>
-                </div>
-                <li class="nav-item d-none d-md-block">
-                  <a class="nav-link mx-2" href="#">
-                    <img
-                      src="./src/images/Logo.svg"
-                      height="50"
-                    />
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-2" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal" href="#">
-                    <button type="button" class="btn btn-primary border border-primary text-white">Sign in</button>
-                  </a>
-                </li>
-              </ul>
-            </div>
+                    <button type="button" class="nav-link mx-2 btn btn-primary border border-primary text-white px-4 mt-2 mt-md-0  " data-bs-toggle="modal" data-bs-target="#exampleModal">Sign in</button>
+                </li>                
+                </ul>
+              </div>
+
           </div>
         </nav>
       </div>
@@ -128,7 +103,7 @@
 
                   <div class="mb-3 text-start">
                       <label for="emailInput" class="form-label">Email Address</label>
-                      <input type="email" class="form-control rounded-3" id="emailInput" placeholder="yourname@gmail.com" required aria-describedby="emailHelp">
+                      <input type="email" class="form-control rounded-3" id="emailInput" placeholder="yourname@gmail.com" required>
                   </div>
               
                   <div class="mb-3 text-start">
@@ -208,5 +183,9 @@
     
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8ba4dac050.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

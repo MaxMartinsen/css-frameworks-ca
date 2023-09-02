@@ -240,6 +240,8 @@ nav {
   position: relative;
   background-color: $indigo-900 !important;
 }
+/* Scroll */
+
 
 .scrollable-content {
   
@@ -247,7 +249,7 @@ nav {
   overflow-y: auto;
   overflow-x: hidden;
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
   }
   
   &::-webkit-scrollbar-track {
@@ -260,4 +262,23 @@ nav {
     border-radius: 10px;
     background: $gradient-blue;
   }
+}
+
+@media (min-width: 768px) {
+    .scrollable-content {
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+            background-color: $gray-800 !important;
+            border-radius: 10px;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: $gradient-blue;
+        }
+    }
 }

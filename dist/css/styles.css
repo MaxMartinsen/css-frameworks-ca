@@ -12074,6 +12074,52 @@ nav {
   color: #fff !important;
 }
 
+/* Card */
+.story-card {
+  position: relative;
+  height: 300px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+.story-card:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+  transition: background-color 0.3s;
+}
+.story-card:hover:after {
+  background: linear-gradient(transparent, transparent);
+}
+.story-card .profile-pic {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+.story-card .profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.story-card .profile-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
 /* Side Bar */
 .list-group-item {
   border: none;

@@ -210,6 +210,57 @@ nav {
 .active {
   color: $white !important;
 }
+/* Card */
+.story-card {
+  position: relative;
+  height: 300px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+      transition: background-color 0.3s;
+  }
+
+  &:hover:after {
+      background: linear-gradient(transparent, transparent);
+  }
+
+  .profile-pic {
+      position: absolute;
+      bottom: 40px;
+      left: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid $white;
+
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+
+  .profile-name {
+      position: absolute;
+      bottom: 10px;
+      left: 10px; 
+      color: $white;
+      font-weight: bold;
+  }
+}
+
 /* Side Bar */
 .list-group-item {
   border: none;
@@ -263,9 +314,8 @@ nav {
   background-color: $indigo-900 !important;
 }
 /* Scroll */
-
-
 .scrollable-content {
+  
   
   height: calc(89.4vh);
   overflow-y: auto;

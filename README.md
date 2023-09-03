@@ -1,3 +1,7 @@
+Certainly! Here's your `readme.md` file with the website link added:
+
+---
+
 # DizMiss
 ## A Social Networking Experience
 
@@ -6,6 +10,8 @@
 </div>
 
 DizMiss is a modern social networking platform designed to connect individuals from all walks of life. Whether you're looking to reconnect with old friends, make new ones, or share your life's moments, DizMiss is the place to be.
+
+🌐 **Website**: [https://dizmiss.netlify.app/](https://dizmiss.netlify.app/)
 
 ---
 
@@ -36,7 +42,6 @@ DizMiss was developed as a school project, aiming to create a comprehensive soci
 - **Parental Controls**: Parents can monitor activity, set screen time, and control friend requests.
 - **Educational Content**: Curated content that is both fun and educational, promoting learning while socializing.
 - **Safety First**: Advanced filters to prevent inappropriate content and bullying, ensuring a positive environment.
-
 
 ### Built With
 

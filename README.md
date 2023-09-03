@@ -1,7 +1,3 @@
-Certainly! Here's your `readme.md` file with the website link added:
-
----
-
 # DizMiss
 ## A Social Networking Experience
 

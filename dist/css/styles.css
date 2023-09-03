@@ -11937,7 +11937,7 @@ textarea.form-control-lg {
   z-index: -2;
 }
 
-/* Background Hero */
+/* Background Profile */
 .background-hero {
   position: absolute;
   top: 50px;
@@ -11975,6 +11975,11 @@ textarea.form-control-lg {
 
 .form-control {
   background-color: rgba(255, 255, 255, 0.0901960784) !important;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
 }
 
 /* Font */
@@ -12054,6 +12059,15 @@ nav {
 }
 .btn-secondary:hover {
   background: #C65647 !important;
+}
+
+.btn-success {
+  font-size: 24px;
+  color: #a4a4a4 !important;
+  background: none !important;
+}
+.btn-success:hover {
+  color: #fff !important;
 }
 
 .active {

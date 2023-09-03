@@ -12119,6 +12119,15 @@ nav {
   color: #fff;
   font-weight: bold;
 }
+.story-card .story-inscription {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
 
 /* Side Bar */
 .list-group-item {

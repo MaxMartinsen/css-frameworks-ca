@@ -1,6 +1,6 @@
 # DizMiss: Social Media for Kids
 
-KidConnect is a safe and engaging social media platform tailored for kids. With vibrant visuals, intuitive features, and enhanced safety measures, we ensure a secure and fun online experience for our young users.
+DizMiss is a safe and engaging social media platform tailored for kids. With vibrant visuals, intuitive features, and enhanced safety measures, we ensure a secure and fun online experience for our young users.
 
 ## Features
 
@@ -44,3 +44,5 @@ No contributions.
 No license.
 
 ## Acknowledgments
+
+...

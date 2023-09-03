@@ -12214,5 +12214,16 @@ nav {
     background: linear-gradient(180deg, #00c6fb, #005bea);
   }
 }
+@media (max-width: 767.98px) {
+  #navbarNavDropdown {
+    position: absolute;
+    padding: 50px 10px 50px 10px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #212b86;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
